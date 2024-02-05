@@ -1,0 +1,7 @@
+HTML stand for Hypertext Mrakup Language. It is a markup language used to create wwebpages
+and form a basic webpage with attributes and tags.
+
+What has been learnt in html in week 3 lab activity.
+-Html is the foundation of building websites.
+-Html is used to add content on a website.
+-Basic outline of an html file and the essential tags.

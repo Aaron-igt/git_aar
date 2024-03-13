@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Aaron Nsajuli">
-        <meta name="description" content="Learning forms">
-        <meta name="Keywords" content="Forms,label,html">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Learning how to create forms">
+        <meta name="Keywords" content="Forms,html,login">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Creating forms</title>
+        <title>Login</title>
         <link rel="icon" href="web.jfif" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
@@ -15,29 +15,71 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://www.google.com">google</a></li>
-                    <li><a href="/">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#form">home</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="intro">
-                <h1>Introduction to this page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quibusdam delectus numquam corporis quos. Sit libero quis autem. Mollitia asperiores officia, sint recusandae obcaecati vero optio fugiat error nesciunt a?</p>
-            </section>
-            <section>
+            <article id="form">
                 <div>
-                    <form action="index.html" method="get">
+                    <form action="index.html" method="get" enctype="multipart/form-data">
                         <div>
-                            <label for="userName">Name</label>
-                            <input type="text" name="Name" id="name">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age">
+                        </div>
+                        <div>
+                            Fav Foods
+                            <div>
+                                <label for="banana">Banana</label>
+                                <input type="checkbox" name="banana" id="banana">
+                            </div>
+                            <div>
+                                <label for="apple">Apple</label>
+                                <input type="checkbox" name="apple" id="apple">
+                            </div>
+                        </div>
+                        <div>
+                            Gender
+                            <div>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="male">
+                            </div>
+                            <div>
+                                <label for="female">female</label>
+                                <input type="radio" name="gender" id="female">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="EyeColor">EyeColor</label>
+                            <select name="EyeColor" id="EyeColor">
+                                <option label="black" value="black"></option>
+                                <option label="Brown"value="Brown"></option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="bio">bio</label>
+                            <textarea name="bio" id="bio"></textarea>
+                        </div>
+                        <input type="hidden" name="hidden" vale="yooo">
+                        <div>
+                            <label for="file">File</label>
+                            <input type="file" name="file" id="file">
                         </div>
                         <div>
                             <label for="Password">Password</label>
-                            <input type="password" name="Password" id="Password">
+                            <input type="password" name="Password" id="Password" required>
                         </div>
-                        <button>Submit</button>
                     </form>
                 </div>
-            </section>
+            </article>
         </main>
+    </body>     

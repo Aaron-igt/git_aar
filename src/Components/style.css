@@ -1,0 +1,53 @@
+:root{
+    --background: black;
+    --text-color: white;
+}
+header{
+    background-color: var(--background);
+}
+.menu-color{
+    color: var(--text-color);
+}
+.nav-link1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+img{
+    width: 60px;
+}
+.hero-container{
+    background-color: var(--background);
+}
+.hero-text h1 span, .hero-text p{
+    color: var(--text-color);
+}
+.Book h2{
+    background-color: var(--background);
+}
+.slider{
+    background-image: url(../assets/images/back3.jpg);
+}
+.p1color {
+    background-color: rgb(176, 241, 176);
+}
+.p2color {
+    background-color:rgb(255, 231, 231);
+}
+.p3color {
+    background-color: rgb(255, 231, 231);
+}
+.p4color {
+    background-color: rgb(255, 231, 231);
+}
+.p5color {
+    background-color:rgb(255, 231, 231);
+}
+.pImage {
+    width: 300px;
+    height: 200px;
+}
+.footer {
+    background-image: url('../assets/images/back2.jpg');
+}
